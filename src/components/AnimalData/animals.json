@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Kangaroo",
+      "image": "./img/"
+    },
+    {
+      "id": 2,
+      "name": "Koala",
+      "image": "./img/"
+    },
+    {
+      "id": 3,
+      "name": "Emu",
+      "image": "./img/"
+    },
+    {
+      "id": 4,
+      "name": "Wombat",
+      "image": "./img/"
+    },
+    {
+      "id": 5,
+      "name": "Platypus",
+      "image": "./img/"
+    },
+    {
+      "id": 6,
+      "name": "Echidna",
+      "image": "./img/"
+    },
+    {
+      "id": 7,
+      "name": "Quokka",
+      "image": "./img/"
+    },
+    {
+      "id": 8,
+      "name": "Possum",
+      "image": "./img/"
+    },
+    {
+      "id": 9,
+      "name": "Cockatoo",
+      "image": "./img/"
+    },
+    {
+      "id": 10,
+      "name": "Dingo",
+      "image": "./img/"
+    },
+    {
+      "id": 11,
+      "name": "Wallaby",
+      "image": "./img/"
+    },
+    {
+      "id": 12,
+      "name": "Shark",
+      "image": "./img/"
+    }
+  ]
+  
