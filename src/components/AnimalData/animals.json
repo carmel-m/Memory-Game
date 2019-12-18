@@ -2,62 +2,62 @@
     {
       "id": 1,
       "name": "Kangaroo",
-      "image": "./img/"
+      "image": "./img/kangaroo.jpg"
     },
     {
       "id": 2,
       "name": "Koala",
-      "image": "./img/"
+      "image": "./img/koala.jpg"
     },
     {
       "id": 3,
       "name": "Emu",
-      "image": "./img/"
+      "image": "./img/emu.jpg"
     },
     {
       "id": 4,
       "name": "Wombat",
-      "image": "./img/"
+      "image": "./img/emu.jpg"
     },
     {
       "id": 5,
       "name": "Platypus",
-      "image": "./img/"
+      "image": "./img/platypus.jpg"
     },
     {
       "id": 6,
       "name": "Echidna",
-      "image": "./img/"
+      "image": "./img/echidna.jpg"
     },
     {
       "id": 7,
       "name": "Quokka",
-      "image": "./img/"
+      "image": "./img/quokka.jpg"
     },
     {
       "id": 8,
       "name": "Possum",
-      "image": "./img/"
+      "image": "./img/possum.jpg"
     },
     {
       "id": 9,
       "name": "Cockatoo",
-      "image": "./img/"
+      "image": "./img/cockatoo.jpg"
     },
     {
       "id": 10,
       "name": "Dingo",
-      "image": "./img/"
+      "image": "./img/dingo.jpg"
     },
     {
       "id": 11,
       "name": "Wallaby",
-      "image": "./img/"
+      "image": "./img/wallaby.jpg"
     },
     {
       "id": 12,
-      "name": "Shark",
-      "image": "./img/"
+      "name": "Frilled-Neck Lizard",
+      "image": "./img/frilled-neck-lizard.jpg"
     }
   ]
   

@@ -1,30 +1,59 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Counter from "./components/Counter";
 import Instructions from "./components/Instructions";
-import Wrapper from "./components/Wrapper";
-import AnimalCard from "./components/AnimalCard";
+// import Wrapper from "./components/Wrapper";
+// import AnimalCard from "./components/AnimalCard";
 
-// import { render } from "@testing-library/react";
 
-function App() {
+class App extends Component {
+
+  //manage state here 
+
+  //logic for clicks
+
+  render() {
     return (
-      <div>
-        <Header>
-          <Counter />;
-        </Header>
-        ;
-        <Instructions />;
-        <Wrapper>
-          <AnimalCard />;
-        </Wrapper>
-        ;
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <Header>
+              <Counter />
+            </Header>
+            <Instructions />
+
+            {/* Map components here */}
+          </div>
+        </div>
+        {/* // <Wrapper>
+        //   <AnimalCard />
+        // </Wrapper> */}
       </div>
     );
-};
+  }
+}
 
 export default App;
+// function App() {
+
+//     return (
+//       <div>
+//         <Header>
+//           <Counter />
+//         </Header>
+
+//         <Instructions />
+//         <Wrapper>
+//           <AnimalCard />
+//         </Wrapper>
+
+//       </div>
+//     );
+
+// };
+
+// export default App;
 
 // import React from "react";
 // import FriendCard from "./components/FriendCard";
