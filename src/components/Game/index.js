@@ -23,6 +23,7 @@ class App extends Component {
     click.map(id => {
       if (id === event.target.id) {
         alert("Game over");
+
         window.location.reload();
       }
     });
@@ -31,6 +32,7 @@ class App extends Component {
     counter += 1;
     if (counter === 12) {
       alert("You won");
+
       window.location.reload();
     }
 
@@ -40,6 +42,9 @@ class App extends Component {
 
     console.log(event.target.id);
   };
+
+
+
 
   render() {
     return (

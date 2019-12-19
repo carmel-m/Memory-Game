@@ -3,10 +3,10 @@ import Counter from "../Counter";
 
 function Header(props) {
   return (
-    <div className="container border">
+    <div className="container">
       <div className="row border">
-        <div className="col-sm-9 border">Memory Game</div>
-        <div className="col-sm-3 border"><Counter 
+        <div className="col-sm-9">Memory Game</div>
+        <div className="col-sm-3"><Counter 
         count={props.count}
         /></div>
       </div>
