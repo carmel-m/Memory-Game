@@ -4,6 +4,7 @@ import Instructions from "../Instructions";
 import Wrapper from "../Wrapper";
 import AnimalCard from "../AnimalCard";
 import animals from "../../components/AnimalData/animals.json";
+import arrayShuffle from "array-shuffle";
 
 class App extends Component {
   state = {
@@ -12,19 +13,16 @@ class App extends Component {
     clicked: []
   };
 
-  // ========== LOGIC HERE ==========
-
-  // WHENCLICKED()
+  // ========== LOGIC ==========
 
   whenClicked = event => {
     let counter = this.state.counter;
     let click = this.state.clicked;
 
-    click.map(id => {
+    click.forEach(id => {
       if (id === event.target.id) {
         alert("Game over");
-        this.randomize();
-        // window.location.reload();
+        window.location.reload();
       }
     });
 
@@ -32,38 +30,38 @@ class App extends Component {
     counter += 1;
     if (counter === 12) {
       alert("You won");
-      this.randomize();
-      // window.location.reload();
+      window.location.reload();
     }
 
+    this.randomize();
     this.setState({ counter, clicked: click });
-
-    console.log(event.target.id);
+    // console.log(event.target.id);
   };
 
   randomize = () => {
-    this.setState({
-      animals: this.state.animals.sort(() => Math.random() - 0.5)
-    });
+    let random = arrayShuffle(this.state.animals);
+    this.setState({ animals: random });
   };
 
   render() {
     return (
-      <div className="container border">
-        <div className="row border">
-          <div className="col-sm-12 border">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
             <Header count={this.state.counter} />
-            <div className="row border">
-              <div className="col-sm-12 border">
+            <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
                 <Instructions />
+              </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container border">
+        <div className="container">
           <Wrapper>
-            <div className="row border">
+            <div className="row card-row">
               {this.state.animals.map(animal => (
                 <AnimalCard
                   id={animal.id}
@@ -83,30 +81,3 @@ class App extends Component {
 
 export default App;
 
-//   removeFriend = id => {
-//     const newFriends = this.state.friends.filter(
-//       isClicked => isClicked.id !== id
-//     );
-
-//     this.setState({ friends: newFriends });
-//   };
-
-//   render() {
-//     return (
-//       <Wrapper>
-//         <h1 className="title">Friends List</h1>
-//         {this.state.friends.map(friendInfo => (
-//           <FriendCard
-//             name={friendInfo.name}
-//             image={friendInfo.image}
-//             occupation={friendInfo.occupation}
-//             location={friendInfo.location}
-//             key={friendInfo.id}
-//             id={friendInfo.id}
-//             removeFriend={this.removeFriend}
-//           />
-//         ))}
-//       </Wrapper>
-//     );
-//   }
-// }

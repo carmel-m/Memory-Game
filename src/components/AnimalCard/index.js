@@ -1,15 +1,10 @@
 import React from "react";
-import "./style.css";
 
 function AnimalCard(props) {
   return (
-    <div className="card p-1 col-3">
-      {/* <div className="card-body"> */}
-      {/* <div className="card-img"> */}
+    <div className="col-3 square">
         <img className="card-img img-fluid" alt={props.name} src={props.image} id={props.id} onClick={props.whenClicked}/>
       </div>
-    // </div>
-    // </div>
   );
 }
 
