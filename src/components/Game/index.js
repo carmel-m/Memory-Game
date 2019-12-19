@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../Header";
-// import Counter from "../Counter";
 import Instructions from "../Instructions";
 import Wrapper from "../Wrapper";
 import AnimalCard from "../AnimalCard";
@@ -46,10 +45,10 @@ class App extends Component {
     return (
       <div className="container border">
         <div className="row border">
-          <div className="col-12 border">
+          <div className="col-sm-12 border">
             <Header count={this.state.counter} />
             <div className="row border">
-              <div className="col-12 border">
+              <div className="col-sm-12 border">
                 <Instructions />
               </div>
             </div>

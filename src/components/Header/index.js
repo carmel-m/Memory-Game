@@ -5,8 +5,8 @@ function Header(props) {
   return (
     <div className="container border">
       <div className="row border">
-        <div className="col-9 border">Memory Game</div>
-        <div className="col-3 border"><Counter 
+        <div className="col-sm-9 border">Memory Game</div>
+        <div className="col-sm-3 border"><Counter 
         count={props.count}
         /></div>
       </div>
