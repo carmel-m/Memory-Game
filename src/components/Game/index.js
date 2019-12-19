@@ -23,8 +23,8 @@ class App extends Component {
     click.map(id => {
       if (id === event.target.id) {
         alert("Game over");
-
-        window.location.reload();
+        this.randomize();
+        // window.location.reload();
       }
     });
 
@@ -32,19 +32,20 @@ class App extends Component {
     counter += 1;
     if (counter === 12) {
       alert("You won");
-
-      window.location.reload();
+      this.randomize();
+      // window.location.reload();
     }
 
-    this.setState({ counter, 
-      clicked: click
-     });
+    this.setState({ counter, clicked: click });
 
     console.log(event.target.id);
   };
 
-
-
+  randomize = () => {
+    this.setState({
+      animals: this.state.animals.sort(() => Math.random() - 0.5)
+    });
+  };
 
   render() {
     return (
@@ -60,22 +61,18 @@ class App extends Component {
           </div>
         </div>
 
-        {/* Map components here */}
-
         <div className="container border">
           <Wrapper>
             <div className="row border">
-              {/* <div className="col-12 border"> */}
-                {this.state.animals.map(animal => (
-                  <AnimalCard
-                    id={animal.id}
-                    key={animal.id}
-                    name={animal.name}
-                    image={animal.image}
-                    whenClicked={this.whenClicked}
-                  />
-                ))}
-              {/* </div> */}
+              {this.state.animals.map(animal => (
+                <AnimalCard
+                  id={animal.id}
+                  key={animal.id}
+                  name={animal.name}
+                  image={animal.image}
+                  whenClicked={this.whenClicked}
+                />
+              ))}
             </div>
           </Wrapper>
         </div>
