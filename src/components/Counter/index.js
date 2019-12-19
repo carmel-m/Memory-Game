@@ -1,10 +1,10 @@
 import React from "react";
 
-function Counter() {
+function Counter(props) {
 
     return (
         <div className="container border">
-            Counter
+            Current Score: {props.count}
         </div>
     )
 }

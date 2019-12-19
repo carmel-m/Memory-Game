@@ -8,33 +8,46 @@ import animals from "../../components/AnimalData/animals.json";
 
 class App extends Component {
   state = {
-    animals
+    animals,
+    counter: 0,
+    clicked: []
   };
 
   // ========== LOGIC HERE ==========
 
-  
   // WHENCLICKED()
 
-  whenClicked = id => {
-  const animals = this.state.animals;
+  whenClicked = event => {
+    let counter = this.state.counter;
+    let click = this.state.clicked;
 
+    click.map(id => {
+      if (id === event.target.id) {
+        alert("Game over");
+        window.location.reload();
+      }
+    });
 
-  const click = animals.filter()
-  this.state.friends.filter(
-        // isClicked => isClicked.id === id
-      );
+    click.push(event.target.id);
+    counter += 1;
+    if (counter === 12) {
+      alert("You won");
+      window.location.reload();
+    }
 
-      this.setState({ animals });
-      this.setState({ click });
-  }
+    this.setState({ counter, 
+      clicked: click
+     });
+
+    console.log(event.target.id);
+  };
 
   render() {
     return (
       <div className="container border">
         <div className="row border">
           <div className="col-12 border">
-            <Header />
+            <Header count={this.state.counter} />
             <div className="row border">
               <div className="col-12 border">
                 <Instructions />
@@ -48,13 +61,17 @@ class App extends Component {
         <div className="container border">
           <Wrapper>
             <div className="row border">
-            <div className="col-12 border">
-              {/* {this.state.animals.map() ( */}
- <AnimalCard 
- />
-              {/* )} */}
-             
-            </div>
+              {/* <div className="col-12 border"> */}
+                {this.state.animals.map(animal => (
+                  <AnimalCard
+                    id={animal.id}
+                    key={animal.id}
+                    name={animal.name}
+                    image={animal.image}
+                    whenClicked={this.whenClicked}
+                  />
+                ))}
+              {/* </div> */}
             </div>
           </Wrapper>
         </div>
@@ -64,7 +81,6 @@ class App extends Component {
 }
 
 export default App;
-
 
 //   removeFriend = id => {
 //     const newFriends = this.state.friends.filter(
@@ -93,4 +109,3 @@ export default App;
 //     );
 //   }
 // }
-
