@@ -2,27 +2,27 @@
     {
       "id": 1,
       "name": "Kangaroo",
-      "image": "/img/kangaroo.png"
+      "image": "./img/kangaroo.png"
     },
     {
       "id": 2,
       "name": "Koala",
-      "image": "/img/koala.jpg"
+      "image": "./img/koala.jpg"
     },
     {
       "id": 3,
       "name": "Emu",
-      "image": "/img/emu.jpg"
+      "image": "./img/emu.jpg"
     },
     {
       "id": 4,
       "name": "Wombat",
-      "image": "/img/wombat.jpg"
+      "image": "./img/wombat.jpg"
     },
     {
       "id": 5,
       "name": "Platypus",
-      "image": "/img/platypus.jpg"
+      "image": "./img/platypus.jpg"
     },
     {
       "id": 6,
@@ -37,7 +37,7 @@
     {
       "id": 8,
       "name": "Possum",
-      "image": "/img/possum.jpg"
+      "image": "./img/possum.jpg"
     },
     {
       "id": 9,
@@ -47,17 +47,17 @@
     {
       "id": 10,
       "name": "Dingo",
-      "image": "/img/dingo.jpg"
+      "image": "./img/dingo.jpg"
     },
     {
       "id": 11,
       "name": "Wallaby",
-      "image": "/img/wallaby.jpg"
+      "image": "./img/wallaby.jpg"
     },
     {
       "id": 12,
       "name": "Frilled-Neck Lizard",
-      "image": "/img/frilled-neck-lizard.jpeg"
+      "image": "./img/frilled-neck-lizard.jpeg"
     }
   ]
   

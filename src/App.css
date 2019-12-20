@@ -6,10 +6,19 @@
     /* padding: 10px; */
 }
 
+.wrapper {
+  margin: 0 auto;
+}
+
 .animal-row {
   margin: 10px;
   padding: 10px;
 }
+
+/* .card-row {
+  margin: 10px 100px;
+  padding: 10px 100px;
+} */
 
 .square {
     margin: 10px auto;
@@ -26,7 +35,7 @@
   /* height: 10em; */
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 150px 20px 20px 20px;
 }
 
 .header-text {
@@ -38,6 +47,10 @@
 .counter-text {
   font-family: 'Concert One', cursive;
   font-size: 20px;
+  margin: 0 auto;
+}
+
+.inner-text {
   margin: 0 auto;
 }
 
