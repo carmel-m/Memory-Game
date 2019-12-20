@@ -6,7 +6,7 @@ https://carmel-m.github.io/Memory-Game/
 ---
 
 ### APPLICATION DESCRIPTION:
-This is an Australian animal-themed memory game app created with React.js and Create React App.  The aim of the game is to click on each of the 12 animals only once, and they will automatically reshuffle after each click.
+This is an Australian animal-themed memory game app created with React.js and Create React App.  The aim of the game is to click on each of the 12 animal cards only once, and the cards will automatically reshuffle after each click.  If an animal is clicked twice, the game will restart.
 
 ---
 ### LANGUAGES/FRAMEWORKS/TECHNOLOGIES:

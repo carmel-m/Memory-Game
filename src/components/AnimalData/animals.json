@@ -42,7 +42,7 @@
     {
       "id": 9,
       "name": "Cockatoo",
-      "image": "/img/cockatoo.jpg"
+      "image": "./img/cockatoo.jpg"
     },
     {
       "id": 10,
