@@ -6,13 +6,8 @@ function Header(props) {
     <div className="container header">
       <div className="row header-text">Australian Animal Memory Game
         <div className="col-sm-3 counter-text"><Counter 
-        count={props.count}
-
-        // <div className="col-sm-9 header-text">Memory Game</div>
-        // <div className="col-sm-3 counter-text"><Counter 
-        // count={props.count} />
-
-        /></div>
+        count={props.count}/>
+        </div>
       </div>
     </div>
   );

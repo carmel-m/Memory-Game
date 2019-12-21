@@ -50,11 +50,12 @@ class App extends Component {
           <div className="col-sm-12">
             <Header count={this.state.counter} />
             <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <Instructions />
-              </div>
-              </div>
+              {/* put this in instructions component */}
+              {/* <div className="row">
+              <div className="col-sm-12"> */}
+              <Instructions />
+              {/* </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -80,4 +81,3 @@ class App extends Component {
 }
 
 export default App;
-

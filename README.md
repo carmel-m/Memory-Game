@@ -1,4 +1,4 @@
-# Job Scraper
+# Memory Game
 
 ### DEPLOYED LINK:
 https://carmel-m.github.io/Memory-Game/
