@@ -45,35 +45,39 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <div className="row">
-          <div className="col-sm-12">
-            <Header count={this.state.counter} />
-            <div className="container">
-              {/* put this in instructions component */}
-              {/* <div className="row">
-              <div className="col-sm-12"> */}
-              <Instructions />
-              {/* </div>
-              </div> */}
-            </div>
-          </div>
+          <Header count={this.state.counter} />
         </div>
 
         <div className="container">
-          <Wrapper>
-            <div className="row card-row">
-              {this.state.animals.map(animal => (
-                <AnimalCard
-                  id={animal.id}
-                  key={animal.id}
-                  name={animal.name}
-                  image={animal.image}
-                  whenClicked={this.whenClicked}
-                />
-              ))}
+          <div className="row">
+            <div className="col-sm-1"></div>
+            <div className="col-sm-10">
+              <Instructions />
             </div>
-          </Wrapper>
+            <div className="col-sm-1"></div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-sm-2"></div>
+          <div className="col-sm-8">
+            <Wrapper>
+              <div className="row card-row">
+                {this.state.animals.map(animal => (
+                  <AnimalCard
+                    id={animal.id}
+                    key={animal.id}
+                    name={animal.name}
+                    image={animal.image}
+                    whenClicked={this.whenClicked}
+                  />
+                ))}
+              </div>
+            </Wrapper>
+          </div>
+          <div className="col-sm-2"></div>
         </div>
       </div>
     );
